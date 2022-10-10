@@ -1,0 +1,10 @@
+//NAVBAR + SUB_NAVBAR + ICON
+
+    AppNav nav = new AppNav();
+    //nav.addItem(new AppNavItem("Home", Home.class, "la la-file"));
+    AppNavItem mimic = new AppNavItem("Mimic");
+    mimic.addItem(new AppNavItem("AHU-HOME.svg"));
+    mimic.addItem(new AppNavItem("CSD.svg")); 
+    Icon mimic_icon  = new Icon(VaadinIcon.ALARM);
+    mimic_icon.getStyle().set("font-size", "small"); //.set("margin-right", "2%")
+    mimic.setIcon(mimic_icon);
